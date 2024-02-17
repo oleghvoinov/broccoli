@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articl</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="no-scroll">
+    <div class="header__nav header__nav-background">
+      @@include('blocks/header/nav.html')
+    </div>
+    @@include('blocks/header/mobile-nav.html') @@include('blocks/loader.html')
+    @@include('blocks/header/modal-form.html')
+    <section class="main">
+      @@include('blocks/main-section/sidebar.html')
+      @@include('blocks/main-section/content-wrapper.html')
+      @@include('blocks/main-section/section-library.html')
+      @@include('blocks/main-section/gallery-slider.html')
+    </section>
+    @@include('blocks/footer.html')
+    <script src="./js/inputmask.bundle.js"></script>
+    <script src="./js/articl.bundle.js"></script>
+  </body>
+</html>

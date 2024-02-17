@@ -1,0 +1,27 @@
+.plate {
+  color: #ffffff;
+}
+
+.plate__list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+  gap: 20px;
+  justify-content: center;
+
+  justify-items: center;
+
+  @media (max-width: 767px) {
+    grid-template-columns: minmax(100px, 1fr);
+  }
+}
+
+.plate__item {
+  border-radius: 5px;
+  display: block;
+  background-color: rgb(109, 109, 110);
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+}

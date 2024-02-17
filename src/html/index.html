@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broccoli</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="no-scroll">
+    <header class="header">
+      <!-- Swiper-->
+      <div class="header__slide">@@include('blocks/header/swiper.html')</div>
+
+      <!-- Header Content-->
+      <div class="header__nav">@@include('blocks/header/nav.html')</div>
+      @@include('blocks/header/header__content.html')
+      @@include('blocks/header/mobile-nav.html') @@include('blocks/loader.html')
+    </header>
+    @@include('blocks/header/modal-form.html')
+    <section class="section" id="section">
+      @@include('blocks/section.html')
+    </section>
+
+    @@include('blocks/footer.html')
+    <script src="./js/inputmask.bundle.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

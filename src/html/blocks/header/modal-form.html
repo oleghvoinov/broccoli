@@ -1,0 +1,43 @@
+<div class="modal">
+  <div class="modal__container" data-target="first">
+    <!-- method="POST" -->
+    <div class="modal-wrapper">
+      <button class="modal-close">Закрыть</button>
+      <form action="#" class="form" enctype="multipart/form-data">
+        <h2 class="form__title">Обратная связь</h2>
+        <label class="form__label">
+          <input
+            class="input input-name"
+            type="text"
+            data-validate-field="name"
+            name="Имя"
+            placeholder="Введите имя"
+          />
+        </label>
+        <label class="form__label">
+          <input
+            class="input input-mail"
+            type="email"
+            data-validate-field="email"
+            name="Email"
+            placeholder="Введите email"
+          />
+        </label>
+
+        <label class="form__label">
+          <textarea
+            class="textarea"
+            name="Сообщение"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Введите ваше сообщение"
+          ></textarea>
+        </label>
+
+        <button class="button">Отправить</button>
+      </form>
+      <div class="modal__img"><img src="./img/form-modal.jpg" alt="" /></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.library {
+  width: 100%;
+
+  padding-left: 200px;
+  padding-bottom: 30px;
+
+  ul {
+    padding: 5px 0;
+    text-align: justify;
+
+    line-height: 1.5;
+
+    li {
+      text-indent: 20px;
+      &::before {
+        content: "– ";
+      }
+    }
+  }
+
+  ol {
+    padding: 5px 0;
+    text-align: justify;
+
+    list-style-type: none;
+    counter-reset: num;
+
+    line-height: 1.5;
+    li {
+      text-indent: 20px;
+      &::before {
+        content: counter(num) ".";
+        counter-increment: num;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: -130px;
+
+    padding-top: 130px;
+    font-size: 24px;
+  }
+
+  @media (max-width: 1235px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

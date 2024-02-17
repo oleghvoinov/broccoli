@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="no-scroll">
+    <div class="header__nav header__nav-background">
+      @@include('blocks/header/nav.html')
+    </div>
+    @@include('blocks/header/mobile-nav.html')
+    @@include('blocks/header/modal-form.html') @@include('blocks/loader.html')
+
+    <section class="news-section">
+      @@include('blocks/news-section/news-search.html')
+      @@include('blocks/news-section/news-container.html')
+      @@include('blocks/news-section/news-button.html')
+    </section>
+    @@include('blocks/footer.html')
+    <script src="./js/inputmask.bundle.js"></script>
+    <script src="./js/news.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700);
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:focus,
+input:focus {
+  outline: 2px solid #fff;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+}
+
+.scroll-wrapper {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+}

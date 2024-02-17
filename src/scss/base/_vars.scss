@@ -1,0 +1,35 @@
+:root {
+  --container-width: 1200px;
+  --container-padding: 15px;
+
+  --font-main: "Poppins", sans-serif;
+  --font-accent: "Playfair Display", serif;
+
+  --page-bg: #fff;
+  --text-color: #000;
+  --accent: #ac182c;
+
+  --laptop-size: 1199px;
+  --tablet-size: 959px;
+  --mobile-size: 599px;
+
+  --yallow-bg: #e27b12;
+  --dark-blue-color: #131f2f;
+}
+
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}
+
+.yallow {
+}
+
+@mixin background($color) {
+  background: linear-gradient(
+      260.06deg,
+      $color -3.87%,
+      rgba(255, 255, 255, 0) 20.89%
+    ),
+    #ffffff;
+}

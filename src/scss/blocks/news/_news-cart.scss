@@ -1,0 +1,149 @@
+.news-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 30px 0;
+
+  border-radius: 10px;
+  background: rgb(19, 31, 47);
+  background: linear-gradient(
+    0deg,
+    rgba(19, 31, 47, 1) 0%,
+    rgba(19, 31, 47, 0.8044467787114846) 81%
+  );
+
+  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.7);
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.news-cart__wrapper {
+  color: #fff;
+  text-align: center;
+
+  padding: 20px;
+
+  cursor: pointer;
+}
+
+.news-cart__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  img {
+    width: 50px;
+    overflow: hidden;
+  }
+
+  @media (max-width: 950px) {
+    left: -15px;
+    top: -10px;
+    img {
+      width: 80px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.news-cart__img {
+  img {
+    overflow: hidden;
+
+    border-radius: 10px;
+  }
+}
+
+.news-cart__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+
+  padding-left: 55px;
+
+  position: relative;
+
+  margin: 20px 0;
+
+  @media (max-width: 950px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+    padding-left: 0px;
+  }
+}
+
+.news-cart__data {
+  padding-bottom: 10px;
+}
+
+.news-cart__description {
+  font-size: 14px;
+  line-height: 1.22;
+
+  @media (max-width: 950px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.news-cart__teg-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 10px 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  background-color: #1b1b1b;
+
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+
+  width: 100%;
+
+  justify-content: start;
+
+  @media (max-width: 1400px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 22px;
+  }
+}
+
+.news-cart__teg {
+  padding: 2px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+
+  margin: 2px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    border: 1px solid #1b1b1b;
+    background-color: #fff;
+    color: #1b1b1b;
+  }
+}

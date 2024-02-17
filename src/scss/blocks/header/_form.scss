@@ -1,0 +1,107 @@
+.modal-wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  padding-top: 50px;
+}
+
+.form {
+  width: 100%;
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  textarea {
+    resize: none;
+
+    width: 100%;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    &:focus {
+      outline: 3px solid #fff;
+    }
+  }
+
+  .button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #202020;
+
+    font-weight: 500;
+
+    transition: all 1s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.form__label {
+  width: 100%;
+  display: block;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+
+  padding: 10px;
+  border-radius: 5px;
+
+  &:focus {
+    outline: 3px solid #fff;
+  }
+}
+
+.input-name {
+}
+
+.input-mail {
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  align-self: end;
+
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #202020;
+  transition: all 1s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.modal__img {
+  margin: 20px;
+  width: 100%;
+  box-sizing: 2px 2px 2px 2px #fff;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

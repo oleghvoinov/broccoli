@@ -1,0 +1,17 @@
+.news-section {
+  // background: rgb(19, 31, 47);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(19, 31, 47, 0.8044467787114846) 0%,
+  //#e27b12cc.8) 55%
+  // );
+
+  background: rgb(28, 28, 28);
+  background: linear-gradient(
+    180deg,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(19, 31, 47, 0.8) 100%
+  );
+
+  padding: 100px 30px 30px 30px;
+}

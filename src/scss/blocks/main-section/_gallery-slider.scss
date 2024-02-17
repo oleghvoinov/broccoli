@@ -1,0 +1,121 @@
+.gallery-container {
+  width: 100%;
+  margin-top: -100px;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1278%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c190 C 144%2c210.8 432%2c297.4 720%2c294 C 1008%2c290.6 1296%2c197.2 1440%2c173L1440 560L0 560z' fill='rgba(226%2c 123%2c 18%2c 0.71)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1278'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 120px 20px 50px 20px;
+
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.gallery-container__title {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  padding-left: 25px;
+  padding-bottom: 20px;
+
+  @media (max-width: 450px) {
+    display: block;
+    padding-left: 0;
+    padding-bottom: 0;
+    margin: 20px auto;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+.gallery-container__btn {
+  background-color: rgba(253, 253, 253, 0.1);
+  border: 2px solid #202020;
+  padding: 10px;
+  border-radius: 20px;
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: #e27b12;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  @media (max-width: 450px) {
+    display: block;
+
+    margin: 20px auto;
+  }
+}
+
+.swiper-gallery {
+  display: flex;
+  max-width: 1180px;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+
+  margin: 0 auto;
+}
+
+.swiper-gallery .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.galleru-slide {
+  display: flex;
+
+  justify-content: center;
+  height: auto;
+  max-width: 100%;
+
+  img {
+    object-fit: contain;
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.slider-controls__gallery {
+  margin-top: 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  border-bottom: 2px solid #fff;
+
+  button {
+    margin: 0 40px;
+
+    border: 3px solid #fff;
+
+    border-radius: 50%;
+
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: #fff;
+      path {
+        transition: all 0.5s ease;
+        fill: #e27b12;
+      }
+    }
+
+    svg {
+      path {
+        &:hover {
+          fill: #e27b12;
+        }
+      }
+    }
+  }
+}
